@@ -6,8 +6,16 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; By Huskydog9988
 ; Repository https://github.com/Huskydog9988/d2-anti-level-load/
 
-#IfWinActive Destiny 2
-\::
-send, {F1}
-send, {Tab}
+anti_Join := "a"
+
+Hotkey, %anti_Join%, anti_Join_Key
 return
+
+; #IfWinActive Destiny 2
+; get key 
+anti_Join_Key:
+GetKeyState, state, %anti_Join_Key%
+if (state = "D")
+    send, {F1}
+    send, {Tab}
+return ; exit
