@@ -8,6 +8,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 anti_Join := "a"
 
+; No config stuff past here
+; No config stuff past here
+
 Hotkey, %anti_Join%, anti_Join_Key
 return
 
