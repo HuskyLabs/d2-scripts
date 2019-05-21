@@ -1,3 +1,13 @@
+; IMPORTANT
+; YOU COULD BE BANNED!!
+
+; This uses autohotkey, you could get banned for using this. 
+; It probability counts as hack as it is a script inputing key press. 
+
+; USE AT YOUR OWN RISK.
+
+
+
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
