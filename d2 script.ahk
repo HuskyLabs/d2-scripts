@@ -29,6 +29,6 @@ return
 anti_Join_Key:
 GetKeyState, state, %anti_Join_Key%
 if (state = "D")
-    send, {F1}
-    send, {Tab}
+    send, {F1 down}{F1 up}
+    send, {Tab down}{Tab up}
 return ; exit
