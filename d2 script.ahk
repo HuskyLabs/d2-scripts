@@ -16,7 +16,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; By Huskydog9988
 ; Repository https://github.com/Huskydog9988/d2-anti-level-load/
 
-anti_Join := "a"
+anti_Join := "\"
 
 ; No config stuff past here
 ; No config stuff past here
@@ -24,11 +24,14 @@ anti_Join := "a"
 Hotkey, %anti_Join%, anti_Join_Key
 return
 
-; #IfWinActive Destiny 2
-; get key 
+anti_Join_Timing := 4 ; SubStr("I'm scripting, awesome!", 16) Rand(50, 100)
+
+#IfWinActive Destiny 2
+; get key  
 anti_Join_Key:
+SetKeyDelay, 30, 30 ; first is delay between keypresses, and second is press duration
+; we are using ControlSend here because Send and SendInput is not affected by SetKeyDelay.
 GetKeyState, state, %anti_Join_Key%
-if (state = "D")
-    send, {F1 down}{F1 up}
-    send, {Tab down}{Tab up}
+;if (state = "D")
+ControlSend, {F1}, {Tab} 
 return ; exit
