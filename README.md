@@ -1,3 +1,2 @@
 # d2-anti-level-load
-A script to be used in Destiny 2 that prevents the loading of a level for the playing using this script.
-Uses autohotkey, one could probability get banned for using this. It probability counts as hack as it is a script inputing key press. Use at your own risk.
+A script used in Destiny 2 that prevents the level timer for a Fireteam. An example usecase would be to prevent the timer for Zero Hour/the mission for Outbreak Perfected.
